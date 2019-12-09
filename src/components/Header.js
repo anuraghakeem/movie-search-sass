@@ -1,9 +1,10 @@
 import React from "react";
 
-const Header = props => {
+const Header = (props) => {
+  const {text,handleRefreshPage} = props;
   return (
-    <header className="App-header">
-      <h2>{props.text}</h2>
+    <header className="App-header" >
+      <h2 onClick={()=> handleRefreshPage() }>{text}</h2>
     </header>
   );
 };

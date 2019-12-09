@@ -6,7 +6,7 @@ import spinner from "../assets/ajax-loader.gif";
 import Search from "./Search";
 import { initialState, reducer } from "../store/reducer";
 import axios from "axios";
-import '../App.scss';
+// import '../app.scss';
 
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=4a3b711b";
 
@@ -22,9 +22,8 @@ const App = () => {
     });
   }, []);
 
-  // you can add this to the onClick listener of the Header component
   const refreshPage = () => {
-    window.location.reload();
+      window.location.reload();
   };
 
   const search = searchValue => {
@@ -65,11 +64,11 @@ const App = () => {
   return (
     <div className="App">
       <div className="m-container">
-        <Header text="MOVIES DATABASE" />
+        <Header text="MOVIES DATABASE" handleRefreshPage = {refreshPage}  />
 
         <Search search={search} />
 
-        <p className="App-intro">Sharing a few of our favourite movies</p>
+        <p className="App-intro">Check out the top listings!</p>
 
         <div className="movies">{retrievedMovies}</div>
       </div>
