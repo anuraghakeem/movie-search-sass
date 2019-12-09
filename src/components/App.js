@@ -65,7 +65,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="m-container">
-        <Header text="HOOKED" />
+        <Header text="MOVIES DATABASE" />
 
         <Search search={search} />
 
