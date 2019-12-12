@@ -1,0 +1,80 @@
+.App {
+  text-align: center; }
+  .App .App-header {
+    background-color: #282c34;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #788585;
+    padding: 20px;
+    cursor: pointer; }
+    .App .App-header h2 {
+      margin: 0; }
+  .App .search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px; }
+    .App .search > input[type="text"] {
+      width: 40%;
+      min-width: 170px; }
+    .App .search input[type="submit"] {
+      padding: 5px;
+      background-color: #282c34;
+      color: white;
+      border: 1px solid black;
+      width: 80px;
+      margin-left: 5px;
+      cursor: pointer; }
+      .App .search input[type="submit"]:hover {
+        background-color: #788585;
+        color: #282c34; }
+  .App .App-intro {
+    font-size: large; }
+  .App .movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .App .movies .spinner {
+      height: 80px;
+      margin: auto; }
+    .App .movies .movie {
+      padding: 5px 25px 10px 25px;
+      max-width: 25%; }
+    .App .movies .errorMessage {
+      margin: auto;
+      font-weight: bold;
+      color: #a10f0f; }
+
+* {
+  box-sizing: border-box; }
+
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .movie {
+    max-width: 33%; } }
+
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .movie {
+    max-width: 50%; } }
+
+@media screen and (max-width: 651px) {
+  .movie {
+    max-width: 100%;
+    margin: auto; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #788585;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+/*# sourceMappingURL=index.css.map */
