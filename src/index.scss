@@ -1,5 +1,5 @@
 @import './app';
-
+$headingSize: 1em;
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+h2{
+  font-size: 1em;
 }
 
 code {
